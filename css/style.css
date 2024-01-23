@@ -9,12 +9,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  text-align: center;
-}
+/* GLOBALS */
 
-header img {
-  width: 40%;
+.clr {
+  clear: both;
 }
 
 a {
@@ -23,7 +21,7 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: #c0c0c0;
 }
 
 a:active {
@@ -33,6 +31,30 @@ a:active {
 /* a:visited {
   
 } */
+
+.button {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px 15px;
+  border: none;
+}
+
+.button:hover {
+  background: #ff0000;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 40%;
+}
 
 .container {
   background-color: #f4f4f4;
@@ -91,6 +113,10 @@ p {
   margin: 20px 0;
 }
 
+.box-2 p {
+  margin-bottom: 20px;
+}
+
 .categories {
   border: 1px solid #800080;
   padding: 10px;
@@ -109,4 +135,50 @@ p {
 .categories li {
   /* padding-bottom: 8px; */
   border-bottom: 1px #333 dotted;
+}
+
+/* FORM */
+.my-form {
+  padding: 20px;
+}
+
+.my-form .form-group {
+  padding-bottom: 15px;
+}
+
+.my-form label {
+  display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+
+  /* THE FOLLOWING IS INCLUDED IN THE RESET:  */
+  /* box-sizing: border-box; */
+}
+
+#main-block {
+  margin-top: 30px;
+  float: left;
+  width: 70%;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  margin-top: 30px;
+  padding: 15px;
+
+  /* THE FOLLOWING IS INCLUDED IN THE RESET:  */
+  /* box-sizing: border-box; */
 }
